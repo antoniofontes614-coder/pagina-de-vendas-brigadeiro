@@ -15,7 +15,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;800&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="images/webp/Camada-1-8.png.webp" type="image/webp" fetchpriority="high">
   <link rel="stylesheet" href="vendor/swiper-bundle.min.css">
-  <link rel="stylesheet" href="page_styles.min.css">
+  <link rel="stylesheet" href="page_styles.css">
+  <style>
+    /* Travar tamanho de ícones SVG para nunca explodirem no mobile */
+    .e-font-icon-svg,
+    .elementor-icon-list-icon svg,
+    .elementor-toggle-icon svg,
+    svg.e-font-icon-svg {
+      width: 1.1em !important;
+      height: 1.1em !important;
+      max-width: 1.2em !important;
+      max-height: 1.2em !important;
+      display: inline-block !important;
+      vertical-align: middle !important;
+      flex-shrink: 0 !important;
+    }
+    .elementor-icon-list-icon {
+      display: flex !important;
+      align-items: center !important;
+      width: auto !important;
+      flex-shrink: 0 !important;
+    }
+    .elementor-icon-list-items .elementor-icon-list-item {
+      display: flex !important;
+      align-items: center !important;
+    }
+  </style>
   <!-- Facebook Pixel Compatibilidade (Carregamento Assíncrono Ultra-rápido) -->
   <script>
     !function(f,b,e,v,n,t,s)
